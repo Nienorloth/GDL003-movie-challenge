@@ -1,0 +1,22 @@
+body {
+    background: #525252;
+}
+header {
+    background: #313131;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    align-items: center;
+    text-align: center;
+    color: #FAF3F3;
+    padding: 2%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 0%;
+}
+ h1 {
+    color: #CA3E47;
+    left: .34%;
+    text-align: left;
+}
