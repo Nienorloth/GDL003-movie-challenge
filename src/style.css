@@ -20,3 +20,20 @@ header {
     left: .34%;
     text-align: left;
 }
+
+.buttons{
+  background-color: #CA3E47;
+  box-shadow: 2px 2px 7px 1px #FAF3F3;
+  font-family: Roboto;
+   font-size: 25px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 25px;
+  padding: 25px;
+  border-radius: 9px;
+  display: table-cell;
+    vertical-align: middle;
+    display:block;
+ margin-left: auto;
+ margin-right: auto;
+}
