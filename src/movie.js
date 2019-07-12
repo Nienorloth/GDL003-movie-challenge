@@ -1,6 +1,6 @@
 
 
-let total_pagina=0
+/*let total_pagina=0
 let titles=[]
 fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=141f21974ee7323456723a5832b7f01d')
     .then(response => {
@@ -32,3 +32,4 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=141f21974ee732345672
     })
 
     console.log(titles)
+*/
