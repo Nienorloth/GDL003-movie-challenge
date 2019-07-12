@@ -85,14 +85,14 @@ let createUrls = async () => {
         list.innerHTML += `
         <div class="flip-card">
           <div class="flip-card-front">
-            <img id="cardPic" src="${movie.Poster}" height="450" width="350">
+            <img id="cardPic" src="${movie.Poster}">
             <button class="modalB" id="${movie.Title}">More</button>
           </div>
       </div>
       <div id="${movie.Title}myModal" class="modal">
       <div class="modal-content">
         <span class="close" id="${movie.Title}close">&times;</span>
-        <h1 id="cardTitle">${movie.Title}</h1> 
+        <h1 id="cardTitle">${movie.Title}</h1>
         <p>Genre: ${movie.Genre}</p>
         <p>Director: ${movie.Director}</p>
         <p>Actors: ${movie.Actors}</p>
@@ -100,13 +100,13 @@ let createUrls = async () => {
         <p>Year: ${movie.Year}</p>
         <p>Sinopsis: ${movie.Plot}</p>
         <p>You can watch it on...</p>
-         <a href="https://getpopcorntime.is/"><img src="https://banner2.kisspng.com/20180402/gzq/kisspng-flappy-popcorn-time-computer-icons-android-popcorn-5ac1da586bb504.1932154615226537844412.jpg" height="80" width="80" alt="Watch at popcorn time"></a>
+         <a href="https://getpopcorntime.is/"  target="_blank"><img src="https://banner2.kisspng.com/20180402/gzq/kisspng-flappy-popcorn-time-computer-icons-android-popcorn-5ac1da586bb504.1932154615226537844412.jpg" height="80" width="80" alt="Watch at popcorn time"></a>
       </div>
     </div>
       `
       });
   }
-  
+
   //Funcionalidad de botones iterados para abrir y cerrar modal con links para ver la película
   //Declarar variable de botón y dar funcionalidad para abrir modal
   let btnMore = document.querySelectorAll(".modalB");
@@ -137,4 +137,3 @@ const homeScreen = () => {
 btnList.addEventListener("click", createUrls);
 btnHome.addEventListener("click", homeScreen);
 btnRandom.addEventListener("click", showRandomMovies);
-
