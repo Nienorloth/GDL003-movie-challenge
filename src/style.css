@@ -37,3 +37,50 @@ header {
  margin-left: auto;
  margin-right: auto;
 }
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  width: 100%; /* Full width */
+  height: 150%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(37, 36, 36, 0.53); /* Black w/ opacity */  
+  left: 50%;
+  top: 70%; 
+  transform: translate(-50%, -50%);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #000000;
+  color: white;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 45%; /* Could be more or less, depending on screen size */
+  height: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.flip-card{
+    display: inline;
+  float: left;
+  font-size:15px;
+  line-height: 0;
+  width: 20%;
+  height: 100%;
+}
