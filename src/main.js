@@ -16,7 +16,6 @@ let movieList = [
   
   const showRandomMovies = () => {
    fetch (randomUrl).then(rawApi => {
-       console.log(randomUrl);
        return rawApi.json();
      })
       .then(movie => {
