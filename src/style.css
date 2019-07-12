@@ -1,5 +1,6 @@
 body {
     background: #525252;
+      text-align:center;
 }
 header {
     background: #313131;
@@ -63,7 +64,6 @@ header {
 .modalB:hover{
   box-shadow: 2px 2px 7px 1px #FAF3F3;
 }
-
 
 /* The Modal (background) */
 .modal {
@@ -150,7 +150,7 @@ footer{
   height: auto;
 }
 
-a{
+a, #credits{
 font: "Roboto";
 color:#FAF3F3;
 text-underline-position: auto;
@@ -188,7 +188,12 @@ text-underline-position: auto;
   width: 450px;
 }
 
+
  @media only screen and (max-width: 900px) {
+   body{
+  text-align: center;
+  }
+
    header {
        font-size: 15px;
        line-height: 17px;
@@ -199,5 +204,11 @@ text-underline-position: auto;
    #cardPic{
   width: 100%;
   height: auto;
+   }
+
+   .buttons{
+      font-size: 25px;
+     line-height: 25px;
+     padding: 10px;
    }
  }
