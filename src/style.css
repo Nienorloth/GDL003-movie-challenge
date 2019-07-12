@@ -23,9 +23,8 @@ header {
 
 .buttons{
   background-color: #CA3E47;
-  box-shadow: 2px 2px 7px 1px #FAF3F3;
   font-family: Roboto;
-   font-size: 25px;
+   font-size: 35px;
   font-style: normal;
   font-weight: bold;
   line-height: 25px;
@@ -36,10 +35,34 @@ header {
     display:block;
  margin-left: auto;
  margin-right: auto;
+ margin-top: 4%;
 }
 
+.buttons:hover{
+  box-shadow: 2px 2px 7px 1px #FAF3F3;
+}
 
+.modalB {
+  background-color: black;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  border-radius: 9px;
+  display: table-cell;
+    vertical-align: middle;
+    display:block;
+ margin-left: auto;
+ margin-right: auto;
+ color: white;
+ margin-top: 3  %;
+ font-size: 15px;
+ padding: 2%;
+ width: 70px;
+}
 
+.modalB:hover{
+  box-shadow: 2px 2px 7px 1px #FAF3F3;
+}
 
 
 /* The Modal (background) */
@@ -51,7 +74,7 @@ header {
   height: 150%; /* Full height */
   overflow: hidden; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(37, 36, 36, 0.53); /* Black w/ opacity */  
+  background-color: rgba(37, 36, 36, 0.6); /* Black w/ opacity */  
   left: 50%;
   top: 70%; 
   transform: translate(-50%, -50%);
@@ -59,13 +82,18 @@ header {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #000000;
-  color: white;
   margin: 10% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 45%; /* Could be more or less, depending on screen size */
   height: 50%;
+  background-color: black;
+  color: white;
+  font-size: 1.2em;
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: left;
+
 }
 
 /* The Close Button */
@@ -74,13 +102,35 @@ header {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;
 }
 
-.flip-card{
-    display: inline;
+.flip-card {
+  background-color: #CA3E47;
+  align: center;
   float: left;
-  font-size:15px;
-  line-height: 0;
-  width: 20%;
-  height: 100%;
+  width: 450px;
+  height: 550px;
+  margin: 1%;
+  border-radius: 9px;
+}
+
+/* box shadow when you move the mouse over the flip box container */
+.flip-card:hover {
+  box-shadow: 2px 2px 7px 1px #FAF3F3;
+}
+
+
+.flip-card-front {
+  text-align: center;
+  background-color: #CA3E47;
+  padding-top: 10%;
+  border-radius: 9px;
+}
+#cardTitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: .4%;
+  margin-bottom: .2%;
 }
