@@ -4,6 +4,7 @@ let showList = document.getElementById("showList");
 let home = document.getElementById("home");
 let btnHome = document.getElementById("btnHome");
 let btnRandom = document.getElementById("btnRandom");
+let btnRandomAgain = document.getElementById("btnRandomAgain");
 
 
 
@@ -45,7 +46,7 @@ let movieList = [
     </div>
       `
       });
-  }
+  
   
   //Funcionalidad de botones iterados para abrir y cerrar modal con links para ver la película
   //Declarar variable de botón y dar funcionalidad para abrir modal
@@ -67,7 +68,7 @@ let movieList = [
       });
     });
   });
-
+  }
 
 
 let createUrls = async () => {
@@ -83,9 +84,9 @@ let createUrls = async () => {
         home.style.display="none";
         showList.style.display="inline-block";
         list.innerHTML += `
-        <div class="flip-card">
-          <div class="flip-card-front">
-            <img id="cardPic" src="${movie.Poster}">
+        <div class="flip-card2">
+          <div class="flip-card-front2">
+            <img id="cardPic2" src="${movie.Poster}">
             <button class="modalB" id="${movie.Title}">More</button>
           </div>
       </div>
@@ -137,3 +138,4 @@ const homeScreen = () => {
 btnList.addEventListener("click", createUrls);
 btnHome.addEventListener("click", homeScreen);
 btnRandom.addEventListener("click", showRandomMovies);
+btnRandomAgain.addEventListener("click", showRandomMovies);

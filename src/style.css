@@ -160,6 +160,33 @@ text-underline-position: auto;
   position: relative;
  float: right;
  }
+ .flip-card2 {
+  background-color: #CA3E47;
+  position: absolute;
+  left: 250px;
+  width: 350px;
+  height: 450px;
+  margin: 1%;
+  border-radius: 9px;
+}
+
+/* box shadow when you move the mouse over the flip box container */
+.flip-card2:hover {
+  box-shadow: 2px 2px 7px 1px #FAF3F3;
+}
+
+
+.flip-card-front2 {
+  text-align: center;
+  float: center;
+  background-color: #CA3E47;
+  padding-top: 10%;
+  border-radius: 9px;
+}
+.cardPic2 {
+  height: 350px;
+  width: 450px;
+}
 
  @media only screen and (max-width: 900px) {
    header {
