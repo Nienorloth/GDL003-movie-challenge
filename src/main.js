@@ -13,7 +13,7 @@ let movieList = [
   let randomNumber = Math.floor(Math.random() * 100);
   console.log(randomNumber);
   
-  let randomUrl = ("https://www.omdbapi.com/?t=" + (movieList[randomNumber]) + "&apikey=fec9d571");
+  let randomUrl = ("https://www.omdbapi.com/?t=" + (movieList[randomNumber]) + "&apikey=8b07dede");
   
   const showRandomMovies = () => {
    fetch (randomUrl).then(rawApi => {
@@ -76,7 +76,7 @@ let createUrls = async () => {
   let output = ""
   for (i = 0; i < movieList.length; i++) {
 
-    await fetch("https://www.omdbapi.com/?t=" + (movieList[i]) + "&apikey=fec9d571")
+    await fetch("https://www.omdbapi.com/?t=" + (movieList[i]) + "&apikey=8b07dede")
       .then(response => {
         return response.json();
       })
